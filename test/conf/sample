@@ -1,0 +1,43 @@
+{
+	"name" : "sample",
+	"action" : "./index.php",
+	"method": "POST",
+	"kvp": [
+		{
+			"label": "username",
+			"print_label" : true,
+			"type": "text",
+			"attr": {
+					"name": "username",
+					"maxlength": "16",
+					"placeholder": "Username..",
+					"required": "true",
+					"style": ""
+			},
+			"regex": "[a-zA-Z0-9_]{8,16}"
+		},
+		{
+			"label": "password",
+			"print_label" : "password",
+			"type": "password",
+			"attr": {
+					"name": "password",
+					"maxlength": "16",
+					"placeholder": "Password..",
+					"required": "true",
+					"style": ""
+			},
+			"regex": "[a-zA-Z0-9_]{8,16}"
+		},
+		{
+			"label": "",
+			"print_label" : "",
+			"type": "submit",
+			"attr": {
+					"name": "submit",
+					"value": "submit"
+			},
+			"regex": false
+		}
+	]
+}
